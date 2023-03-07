@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="" />
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors" />
+    <meta name="generator" content="Hugo 0.108.0" />
+    <title>Website | Sign up</title>
+
+    <link href="https://fonts.cdnfonts.com/css/avenir" rel="stylesheet" />
+    <link href="./assets/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="./assets/css/custom.css" rel="stylesheet" />
+  </head>
+  <body>
+    <header class="bg-white">
+      <div class="container">
+        <div class="header">
+          <div class="logo">
+            <a href="./index.html"><img src="./assets/img/logo.png" /></a>
+          </div>
+          <ul class="nav d-flex align-items-center">
+            <li class="nav-item"><a href="./index.html" class="nav-link active">Home</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">About</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">Gallery</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">Contact</a></li>
+            <li class="nav-item"><a href="./signup.html" class="btn btn-custom">Sign up</a></li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <div class="content">
+      <div class="container d-flex justify-content-center">
+        <div class="signup-container">
+          <div class="signup-header">
+            <h2 class="signup-title">Create an account</h1>
+            <span class="signup-subtitle">Enter your information to create new account</span>
+          </div>
+          <div class="signup-content">
+            <div class="mb-4 w-100">
+              <label for="email" class="form-label">Email</label>
+              <input type="email" class="form-control" name="email" id="email" aria-describedby="emailHelpId" placeholder="">
+            </div>
+            <div class="mb-4">
+              <label for="name" class="form-label">Full name</label>
+              <input type="text"
+                class="form-control" name="name" id="name" aria-describedby="helpId" placeholder="">
+            </div>
+            <div class="mb-4">
+              <label for="phone" class="form-label">Phone</label>
+              <input type="text"
+                class="form-control" name="phone" id="phone" aria-describedby="helpId" placeholder="">
+            </div>
+            <div class="mb-4">
+              <label for="password" class="form-label">Password</label>
+              <input type="password" class="form-control" name="password" id="password" placeholder="Set your password">
+              <span class="password-toggle" onclick="togglePassword()">Show</span>
+            </div>
+            <div class="mb-4">
+              <button type="submit" class="btn btn-custom btn-block" onclick="signUp()">Create account</button>
+            </div>
+            <div class="help text-center">
+              <span>Already have account? <a class="btn-link" href="#">Log in</a></span>
+            </div>
+          </div>
+        </div>
+        <div class="message-box d-none">
+          <img class="icon mb-4" src="./assets/img/success.png" />
+          <span class="message mb-4">Your account has been created successfully</span>
+          <button class="btn btn-custom btn-ok">Got it</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="./assets/js/jquery.min.js"></script>
+    <script src="./assets/js/custom.js"></script>
+  </body>
+</html>
